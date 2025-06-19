@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDA</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+
+    <div class="contenedorprincipal">
+        <H2>AGENDAMIENTO DIARIO</H2>
+        <h1>Mi Agenda Personal</h1>
+        <p>Bienvenido hoy es <span id="fecha"></span></p>
+        <div class="ageda">
+            <p>Tus actividades el día de hoy son las siguientes: </p>
+            <div class="actividades">
+                <ul id="actividad">
+                    <li id="lista" style="text-align: center;"> NO TIENES NADA PROGRAMADO</li>
+                </ul>
+            </div>
+            <div class="agregar">
+                <button id="registrarActividad" onclick="agregar()">Registrar actividad nueva</button>
+                <button id="MostrarActividades" onclick="mostrarActividad()">Mostrar Actividades</button>
+                <div id="formulario" style="display: none;"> 
+                    <p>Complete la información sobre el evento: </p>
+                    <label for="date">Fecha:</label><br>
+                    <input type="date" id="date"><br>
+                    <label for="titulo">Titulo:</label><br>
+                    <input type="text" id="titulo"><br>
+                    <label for="descripcion">Descripcion:</label><br>
+                    <input type="text" id="descripcion"><br>
+                    <label for="ubicacion">Ubicacion:</label><br>
+                    <input type="text" id="ubicacion"><br>
+                    <label for="horaInicio">Hora Inicio:</label><br>
+                    <input type="time" name="hora" id="horaInicio"><br>
+                    <label for="horaFin">Hora Inicio:</label><br>
+                    <input type="time" name="hora" id="horaFin"><br>
+                    <button id="guardar" onclick="guardar()">Guardar</button>
+                </div>
+            </div>
+        </div>
+        <button id="cerrarSesion" onclick="cerrarSesion()"> Cerrar sesion</button>
+    </div>
+    <script src="main2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(143, 197, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+}
+
+.contenedorprincipal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    border-radius: 20%;
+}
+
+.actividades {
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#registrarActividad {
+    margin-bottom: 20px;
+}
+
+#cerrarSesion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
